@@ -9,7 +9,7 @@ import java.util.Map;
 public class UserService {
 
     @Autowired
-    private RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
     private static final org.apache.logging.log4j.Logger log = org.apache.logging.log4j.LogManager.getLogger(UserService.class);
 
     public UserService(RestTemplate restTemplate) {
